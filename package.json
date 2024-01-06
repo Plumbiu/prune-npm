@@ -1,0 +1,42 @@
+{
+  "name": "npm-prune",
+  "version": "0.0.1",
+  "description": "优化你的 node_modules",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "npm-prune": "./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Plumbiu/npm-prune.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Plumbiu/npm-prune/issues"
+  },
+  "homepage": "https://github.com/Plumbiu/npm-prune#readme",
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [
+    "npm",
+    "optimize",
+    "node_modules",
+    "storage",
+    "size",
+    "cli"
+  ],
+  "author": "Plumbiu",
+  "license": "MIT",
+  "devDependencies": {
+    "@plumbiu/eslint-config": "^0.2.0",
+    "@types/micromatch": "^4.0.6",
+    "@types/node": "^20.10.4",
+    "cac": "^6.7.14",
+    "eslint": "^8.55.0",
+    "micromatch": "^4.0.5",
+    "picocolors": "^1.0.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}
