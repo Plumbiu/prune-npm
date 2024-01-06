@@ -1,20 +1,20 @@
 {
-  "name": "npm-prune",
-  "version": "0.0.1",
+  "name": "prune-npm",
+  "version": "0.0.2",
   "description": "优化你的 node_modules",
   "main": "dist/index.js",
   "type": "module",
   "bin": {
-    "npm-prune": "./dist/index.js"
+    "prune-npm": "./dist/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Plumbiu/npm-prune.git"
+    "url": "git+https://github.com/Plumbiu/prune-npm.git"
   },
   "bugs": {
-    "url": "https://github.com/Plumbiu/npm-prune/issues"
+    "url": "https://github.com/Plumbiu/prune-npm/issues"
   },
-  "homepage": "https://github.com/Plumbiu/npm-prune#readme",
+  "homepage": "https://github.com/Plumbiu/prune-npm#readme",
   "scripts": {
     "build": "tsup"
   },

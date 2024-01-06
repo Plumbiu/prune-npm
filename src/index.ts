@@ -2,7 +2,7 @@ import { cac } from 'cac'
 import { safeRmFiles, safeRmDirs, proRmFiles, proRmDirs } from './constants'
 import { findNodeModules, rmGlob } from './utils'
 
-const cli = cac('npm-prune')
+const cli = cac('prune-npm')
 
 cli
   .command('[path]')

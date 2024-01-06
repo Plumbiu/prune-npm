@@ -1,11 +1,11 @@
-# npm-prune
+# prune-npm
 
 > 减少 `node_modules` 文件夹体积大小，优化本地和容器环境的存储空间，支持 monorepo
 
 # 安装
 
 ```bash
-npm i -g npm-prune
+npm i -g prune-npm
 ```
 
 # 使用
@@ -15,13 +15,13 @@ npm i -g npm-prune
 默认情况下，只会删除 `LICENSE`、`md` 和一些无关项目运行的文件：
 
 ```bash
-npm-prune
+prune-npm
 ```
 
 如果希望部署到云服务等环境，可以使用 `--production` 选项，它会将 `node_modules` 中的 `.map`、`.ts`、所有 eslint 配置和 `.d.ts` 等文件删除：
 
 ```bash
-npm-prune --production
+prune-npm --production
 ```
 
 ## `script` 脚本
@@ -30,7 +30,7 @@ npm-prune --production
 
 ```json
 "script": {
-  "prune": "npm-prune"
+  "prune": "prune-npm"
 }
 ```
 
@@ -48,13 +48,13 @@ npm run prune
 
 ![原始大小](https://plumbiu.github.io/blogImg/image-20240106151554239.png)
 
-**npm-prune：**
+**prune-npm：**
 
-![npm-prune](https://plumbiu.github.io/blogImg/image-20240106151755806.png)
+![prune-npm](https://plumbiu.github.io/blogImg/image-20240106151755806.png)
 
-**npm-prune --production：**
+**prune-npm --production：**
 
-![npm-prune --production](https://plumbiu.github.io/blogImg/image-20240106151920450.png)
+![prune-npm --production](https://plumbiu.github.io/blogImg/image-20240106151920450.png)
 
 # 详细配置
 
