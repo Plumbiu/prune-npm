@@ -1,10 +1,3 @@
-import { readFileSync } from 'node:fs'
-
-export const isESM =
-  JSON.parse(readFileSync('./package.json', 'utf-8'))?.type === 'module'
-    ? true
-    : false
-
 export const safeRmFiles = [
   // LICENSE & markdown
   'LICENSE*',
